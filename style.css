@@ -29,7 +29,6 @@ color: blueviolet;
 /*answer display buttons*/
 .buttons {
 display: grid;
-grid-template-columns: 2, auto;
 gap: 5px;
 margin-top: 10px;
 margin-bottom: 10px;

@@ -1,24 +1,33 @@
+//variables
 var startbutton = document.getElementById("start")
-startbutton.addEventListener('click', startgame)
+var questioncontainer = document.getElementById("questioncont")
+
 
 //Function to start the game 
-function startgame {
-
+startbutton.addEventListener('click', startgame)
+function startgame (){
+    console.log("Game started!")
+startbutton.classList.add('hide')
+questioncont.classList.remove('hide')
 }
 
 //funtion to get next question 
-function nextquestion {
+function nextquestion (){
 
 }
 
 //function for question selection 
-function answerquestion {
+function answerquestion (){
 
 }
 
 //Function to start timer 
-function starttimer 
+function starttimer (){
+
+}
 
 //function for local storage and save high score 
-function savegame ();
+function savegame (){
+
+}
 
