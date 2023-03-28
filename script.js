@@ -1,19 +1,19 @@
 //variables
 var startbutton = document.getElementById("start")
 var nextbutton = document.getElementById("next")
+var savebutton = document.getElementById("save)")
 var questioncontainer = document.getElementById("questioncont")
 var shuffle 
 var currentquestion 
 var questionelement = document.getElementById('question')
 var answersElement = document.getElementById('answers')
-//var answerquestion = e.target
-//var correct = selectedbutton.dataset.correct
+
 
 //Functions of the start and next buttons  
 startbutton.addEventListener('click', startgame)
 nextbutton.addEventListener('click', () => {
-    currentquestion++ nextquestion()})
-    //function to start the game
+    currentquestion++})
+//function to start the game
 function startgame (){
     console.log("Game started!")
 startbutton.classList.add('hide')
@@ -24,14 +24,13 @@ nextquestion()
 }
 
 //variables for questions 
-var questions = [
-{
+var questions = [{
 question: 'This is a question',
 answers: [
     {text: 'tests', correct: true},
     {text: 'test', correct: false},
     {text: 'testing', correct: false},
-    {text: 'blah', correct: false}
+    {text: 'blah', correct: false},
 ]
 }    
 ]
@@ -43,7 +42,7 @@ function nextquestion (){
 //function to show the next question
 function showquestion(questions){
     questionelement.innerText = questions.question
-questions.array.answers.forEach(answers => {
+questions.answers.forEach(answers => {
    var button = document.createElement('button')
 button.innerText = answers.text
 button.classList.add('button')
@@ -65,7 +64,17 @@ function answerquestion (){
      nextquestion() 
      //subtract time
     }
+if (shuffle.length > currentquestion +1){
+    nextbutton.classList.remove('hide')
+} else {
+    startbutton.innerText = 'Restart'
+    startbutton.classList.remove('hide')
+    savebutton.classList.remove('hide')
 }
+
+}
+
+
 
 
 //Function to start timer 
