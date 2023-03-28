@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="StyleSheet">
-    <title>Disney Quiz</title>
+    <title>JavaScript Quiz</title>
 </head>
 <body>
 <section Questions class="container">
 <article id="questioncont" class="hide">
 <article id="question"> Question 1</article>
+<article id="secs"></article>
 <article id="answerbutton" class="button">
 <button class="button">button1</button>
 <button class="button">button2</button>
@@ -21,9 +22,28 @@
 <section Controls class="control">
 <button id="start" class="start">Start</button>
 <button id="next" class="next">Next</button>
-<button id="save" class="save">Save Game</button>
 </section>
 </article>
+<section save game>
+    <form>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="username"
+        />
+        <button
+          type="submit"
+          class="save"
+          id="save"
+        >
+          Save
+        </button>
+      </form>
+
+
+</section>
+
 <script src="script.js"></script>
 </body>
 </html>
