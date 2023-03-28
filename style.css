@@ -5,3 +5,13 @@
     line-height: 1.5;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', 'Arial', 'sans-serif', 'monospace';
 }
+
+.container {
+width: 500px;
+max-width: 80%;
+padding: 15px;
+background-color: bisque;
+border-radius: 10px;
+border-style: solid; color: blueviolet;
+
+}
