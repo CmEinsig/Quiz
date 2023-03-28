@@ -27,7 +27,7 @@ color: blueviolet;
 }
 
 /*answer display buttons*/
-.buttons {
+.button {
 display: grid;
 gap: 5px;
 margin-top: 10px;

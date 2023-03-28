@@ -9,8 +9,11 @@ var answersElement = document.getElementById('answers')
 //var answerquestion = e.target
 //var correct = selectedbutton.dataset.correct
 
-//Function to start the game 
+//Functions of the start and next buttons  
 startbutton.addEventListener('click', startgame)
+nextbutton.addEventListener('click', () => {
+    currentquestion++ nextquestion()})
+    //function to start the game
 function startgame (){
     console.log("Game started!")
 startbutton.classList.add('hide')
@@ -37,10 +40,10 @@ answers: [
 function nextquestion (){
     showquestion(shuffle[currentquestion])
 }
-
+//function to show the next question
 function showquestion(questions){
     questionelement.innerText = questions.question
-questions.answers.forEach(answers => {
+questions.array.answers.forEach(answers => {
    var button = document.createElement('button')
 button.innerText = answers.text
 button.classList.add('button')
@@ -51,10 +54,19 @@ button.addEventListener("click", answerquestion)
 })
 }
 
-
-
 //function for question selection 
-function answerquestion (){}
+function answerquestion (){
+    if (correct) {
+        console.log('Correct')
+        nextquestion()
+    }
+    else {
+        console.log('Wrong')
+     nextquestion() 
+     //subtract time
+    }
+}
+
 
 //Function to start timer 
 //function starttimer (){}
