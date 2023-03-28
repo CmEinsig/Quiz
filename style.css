@@ -2,16 +2,34 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    line-height: 1.5;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', 'Arial', 'sans-serif', 'monospace';
 }
 
+/*Body styling middle of the page*/
+body {
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: rgb(255, 153, 0);
+width: 100vw;
+height: 100vh;
+}
+
+/*questions container*/
 .container {
-width: 500px;
-max-width: 80%;
+width: 800px;
 padding: 15px;
 background-color: bisque;
 border-radius: 10px;
-border-style: solid; color: blueviolet;
+border-style: solid; 
+color: blueviolet; 
+}
 
+/*answer display buttons*/
+.buttons {
+display: grid;
+grid-template-columns: auto;
+gap: 5px;
+margin-top: 10px;
+margin-bottom: 10px;
 }
